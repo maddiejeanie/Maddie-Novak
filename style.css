@@ -1,0 +1,128 @@
+:root {
+  --red: #BE1922;
+  --black: #252525;
+  --white: whitesmoke;
+  --pink: #e10a31;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+
+.fade-in {
+  animation: fadeIn 4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  opacity: 1;
+  background: #e92752;
+  background: radial-gradient(circle farthest-corner at top left, #CF1512 0%, #e92752 70%);
+}
+
+.names {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  margin: 1rem 0;
+  color: var(--white);
+  
+}
+
+.datetext {
+  position: relative;
+  padding: 1rem;
+  font-size: 6rem;
+  transform: scaleY(1.5);
+  word-spacing: -0.2em;
+  line-height: 0.8em;
+  text-transform: uppercase;
+  font-family: 'Spectral', sans-serif;
+  font-weight: 800;
+  color: var(--black);
+  
+}
+
+.savetext, .location {
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+  margin: 0.5rem 0;
+}
+
+.location {
+  margin-bottom: 2rem;
+}
+
+.select, .select a {
+  margin: 1rem 1rem;
+  font-size: 0.8rem;
+  color: #8B0000;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+
+}
+
+  button {
+    background: transparent;
+    border: 1px solid #8B0000;
+    width: 40%;
+  }
+
+@media (max-width: 768px) {
+  body {
+    margin: 3rem; /* Adjust padding for small screens */
+  }
+  
+  .datetext {
+  font-size: 6rem;
+  transform: scaleY(1.5);
+        margin-bottom: 2rem;
+   padding-top: 2rem;
+    
+}
+  .savetext {
+    margin-top: 4rem;
+  }
+}
+  
+@media (max-width: 468px) {
+  body {
+    margin: 0rem 6rem; /* Adjust padding for small screens */
+  }
+  
+
+  
+  .datetext {
+  font-size: 4rem;
+  transform: scaleY(1.5);
+    z-index: 0;
+    margin: 2rem;
+}
+
+  }
