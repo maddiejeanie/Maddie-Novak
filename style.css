@@ -90,7 +90,7 @@ a:hover {
 
   button {
     background: transparent;
-    border: 1px solid #8B0000;
+    border: none;
     width: 40%;
   }
 
